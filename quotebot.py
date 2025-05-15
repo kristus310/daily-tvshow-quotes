@@ -31,7 +31,7 @@ def quote_to_used(quote, cursor):
 def send_quote(quote, person, webhook_url):
     date = datetime.today().strftime("%d. %m.")
 
-    payload = {"content": f"💻 **{date} - TV show quote:**\n> *{quote}* - {person}"}
+    payload = {"content": f"📺 **{date} - TV show quote:**\n> \"*{quote}*\" - {person}"}
     requests.post(webhook_url, json=payload)
 
 def main():
