@@ -3,9 +3,6 @@ import sqlite3
 import random
 import requests
 from datetime import datetime
-from dotenv import load_dotenv
-
-load_dotenv()
 
 def database_connection():
     return sqlite3.connect("quotes_database.db")
